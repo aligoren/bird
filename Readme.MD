@@ -2,7 +2,7 @@
 
 Bird is a simple web server written in Golang.
 
-You shouldn't use your production server because of there are too many security risks.
+You shouldn't use on your production server because of there are too many security risks.
 
 # Usage
 
@@ -78,6 +78,8 @@ bird.NotFound("Page not found!", "error/404.html", "yes")
 
 Basic example with some methods:
 
+**Basic Profile Struct**
+
 ```go
 type Profile struct {
 	Id string
@@ -86,7 +88,11 @@ type Profile struct {
 	Type string
 	QueryList map[string][]string
 }
+```
 
+**Codes**
+
+```go
 func HelloWorld() {
 	bird.Message("Merhaba Dünya")
 }
@@ -192,3 +198,5 @@ func main() {
 ```bash
 go run main.go
 ```
+
+That's all :)
